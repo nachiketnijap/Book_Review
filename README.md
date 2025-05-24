@@ -92,7 +92,7 @@ If you want to test without setup, you can test — I have hosted this app on Re
 **Method:** `GET`  
 **Local URL:** `http://localhost:3000/api/book/books/68313fec3fefeff1ec672d26?limit=1&page=2`  
 **Remote URL:** `https://book-review-zspi.onrender.com/api/book/books/68313fec3fefeff1ec672d26?limit=1&page=2`
-
+**Note:** ID provided is the book ID  that you will get from get book endpoint
 ---
 
 ##  6. Submit a Review
