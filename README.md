@@ -1,8 +1,14 @@
 ##  Setup Instructions
 
+# Note :
+If you want to test without setup, you can test — I have hosted this app on Render.
+you can find all apis in postman collection provided below in this readme file
+
 1. **Clone the repository:**
 
 git clone https://github.com/nachiketnijap/Book_Review.git
+
+cd Book_Review
 
 npm install 
 
