@@ -45,6 +45,12 @@ const updateReview = async (req, res) => {
     const updatedReview = req.body;
     const user = req.userInfo.userId; // this will get from auth middleware
 
+    if (updatedReview.rating>5 || updatedReview.rating<1){
+      return res.status(400).json({
+        success: false,
+        message: "Please add rating between 1 and 5.",
+      });
+    }
     // Fetch review by ID
     const review = await Review.findById(id).select("user");
     if (!review) {
