@@ -34,7 +34,7 @@ const submitReview = async (req, res) => {
     console.error(e);
     res.status(500).json({
       success: false,
-      message: "Some error occurred! Please try again.",
+      message: `Some error occurred!  ${e}`,
     });
   }
 };
@@ -80,7 +80,7 @@ const updateReview = async (req, res) => {
     console.log(e);
     res.status(500).json({
       success: false,
-      message: "Some error occured! Please try again",
+      message: `Some error occurred!  ${e}`,
     });
   }
 };
@@ -120,11 +120,11 @@ const deleteReview = async (req, res) => {
         message: "Unable to delete review.",
       });
     }
-  } catch (error) {
+  } catch (e) {
     console.log(e);
     res.status(500).json({
       success: false,
-      message: "Some error occured! Please try again",
+      message: `Some error occurred!  ${e}`
     });
   }
 };

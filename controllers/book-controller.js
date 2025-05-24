@@ -29,7 +29,7 @@ const addBook = async (req, res) => {
     console.log(e);
     res.status(500).json({
       success: false,
-      message: "Some error occured! Please try again",
+      message: `Some error occurred!  ${e}`
     });
   }
 };
@@ -68,7 +68,7 @@ const getBooks = async (req, res) => {
     console.log(e);
     res.status(500).json({
       success: false,
-      message: "Some error occurred! Please try again",
+      message: `Some error occurred!  ${e}`
     });
   }
 };
@@ -114,7 +114,7 @@ const getBookDetails = async (req, res) => {
     console.error(e);
     res.status(500).json({
       success: false,
-      message: "Some error occurred! Please try again",
+      message: `Some error occurred!  ${e}`
     });
   }
 };
@@ -145,7 +145,7 @@ const searchBookByTitleOrAuthor =async(req,res)=>{
     console.log(e);
     res.status(500).json({
       success: false,
-      message: "Some error occurred! Please try again",
+      message: `Some error occurred!  ${e}`
     });
   }
 }
