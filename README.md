@@ -100,8 +100,15 @@ If you want to test without setup, you can test — I have hosted this app on Re
 **Method:** `POST`  
 **Local URL:** `http://localhost:3000/api/review/books/68313fec3fefeff1ec672d26/reviews`  
 **Remote URL:** `https://book-review-zspi.onrender.com/api/review/books/68313fec3fefeff1ec672d26/reviews`  
-**Note:** ID provided is the book ID  
+**Note:** ID provided is the book ID  that you will get from get book endpoint
 **Authorization:** Add Bearer token (received after login)
+**Payload:**
+```json
+{
+  "comment": "modified",
+  "rating": 5
+}
+```
 
 ---
 
