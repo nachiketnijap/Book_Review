@@ -82,7 +82,9 @@ I have kept env file for you reference in source code
 **Method:** `POST`  
 **Local URL:** `http://localhost:3000/api/review/books/68313fec3fefeff1ec672d26/reviews`    
 **Note:** ID provided is the book ID  that you will get from get book endpoint.
+
 **Authorization:** under authorization tab in postman in Auth Type select Bearer Token and paste access token that you get after login.
+
 **Payload:**
 ```json
 {
