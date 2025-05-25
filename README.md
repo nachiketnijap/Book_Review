@@ -100,6 +100,7 @@ I have kept env file for you reference in source code
 **Method:** `PUT`  
 **Local URL:** `http://localhost:3000/api/review/reviews/6831488bc5b8d06714eac700`    
 **Authorization:** under authorization tab in postman in Auth Type select Bearer Token and paste access token that you get after login. 
+
 **Note:** Provide access token of the user who added this review.  
 The ID provided in URL is received in the response when you submit a review.  
 **Payload:**
@@ -117,6 +118,7 @@ The ID provided in URL is received in the response when you submit a review.
 **Method:** `DELETE`  
 **Local URL:** `http://localhost:3000/api/review/reviews/6831488bc5b8d06714eac700`    
 **Authorization:** under authorization tab in postman in Auth Type select Bearer Token and paste access token that you get after login. 
+
 **Note:** Provide access token of the user who added this review.  
 The ID provided in the URL is received in the response when you submit a review.
 
