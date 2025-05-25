@@ -8,10 +8,9 @@ cd Book_Review
 
 npm install 
 
+npm run dev
+
 I have kept env file for you reference in source code
-
-npm run dev 
-
 # Test Endpoints
 
 ## 1. Register
